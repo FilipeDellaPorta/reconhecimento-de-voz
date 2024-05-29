@@ -12,7 +12,7 @@ function verificaSeENumero(chute) {
     }   
 
     if (chute == numeroSecreto) {
-        document.body.innerHTML = `<h2>Parabéns! Você acertou o número secreto!</h2><button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
+        document.body.innerHTML = `<h2>Parabéns! Você acertou o número secreto: ${numeroSecreto}!</h2><button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
     } else if (chute < numeroSecreto) {
         elementoChute.innerHTML += `<h3>O número secreto é maior <i class="fa-solid fa-up-long"></i></h3></div>`
     } else {
