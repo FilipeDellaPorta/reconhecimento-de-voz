@@ -2,7 +2,7 @@ function verificaSeENumero(chute) {
     // debugger
     const numeroChutadoValidado = +chute
     if (chuteForInvalido(numeroChutadoValidado)) {
-        elementoChute.innerHTML += `<div>Valor inválido!</div> <button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
+        elementoChute.innerHTML += `<div>Valor inválido! Valor precisa estar entre ${menorValor} e ${maiorValor}!</div></div>`
         return
     }  
 
