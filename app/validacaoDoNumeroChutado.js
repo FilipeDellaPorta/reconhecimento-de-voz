@@ -7,16 +7,16 @@ function verificaSeENumero(chute) {
     }  
 
     if (numeroForMaiorOuMenorQueOValorPermitido(numeroChutadoValidado)) {
-        elementoChute.innerHTML += `<div>Valor inválido! Valor precisa estar entre ${menorValor} e ${maiorValor}!</div><button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
+        elementoChute.innerHTML += `<div>Valor inválido! Valor precisa estar entre ${menorValor} e ${maiorValor}!</div></div>`
         return
     }   
 
     if (chute == numeroSecreto) {
         document.body.innerHTML = `<h2>Parabéns! Você acertou o número secreto!</h2><button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
     } else if (chute < numeroSecreto) {
-        elementoChute.innerHTML += `<h3>Você errou! O número secreto é maior <i class="fa-solid fa-up-long"></i></h3><button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
+        elementoChute.innerHTML += `<h3>O número secreto é maior <i class="fa-solid fa-up-long"></i></h3></div>`
     } else {
-        elementoChute.innerHTML += `<h3>Você errou! O número secreto é menor <i class="fa-solid fa-down-long"></i></h3><button id="botao-retry" class="botao-retry">Retry <i class="fa-solid fa-rotate-right"></i></button></div>`
+        elementoChute.innerHTML += `<h3>O número secreto é menor <i class="fa-solid fa-down-long"></i></h3></div>`
     }
 }
 
